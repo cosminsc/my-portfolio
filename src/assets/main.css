@@ -1,1 +1,7 @@
-@import './base.css';
+@import url('https://fonts.bunny.net/css?family=albert-sans:400,700&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+   --font-albert: 'Albert Sans', sans-serif;
+}
