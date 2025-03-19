@@ -56,11 +56,11 @@ const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'git
    <div class="space-y-7">
       <div v-for="(item, index) in skillSet" :key="index">
          <div class="border-b-1 border-zinc-700 pb-1 mb-3">{{ item.name }}</div>
-         <div class="text-sm space-y-4">
+         <div class="text-xs space-y-3">
             <div v-for="(skill, index) in item.skills" :key="index">
                <div class="flex w-full justify-between pb-1 text-zinc-400">
                   <span>{{ skill.name }}</span>
-                  <span class="text-xs">{{ skill.percentage }}%</span>
+                  <span>{{ skill.percentage }}%</span>
                </div>
                <div class="bg-zinc-700 w-full h-0.5">
                   <div class="bg-sky-500 h-0.5" :style="{ width: skill.percentage + '%' }"></div>
