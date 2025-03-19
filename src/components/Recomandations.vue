@@ -1,5 +1,5 @@
 <script setup>
-import { IconMapPinFilled } from '@tabler/icons-vue';
+import { IconMapPinFilled } from '@tabler/icons-vue'
 import { register } from 'swiper/element/bundle'
 
 register()

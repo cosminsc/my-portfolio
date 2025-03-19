@@ -1,4 +1,5 @@
 <script setup>
+import History from '@/components/History.vue'
 import Languages from '@/components/Languages.vue'
 import Recomandations from '@/components/Recomandations.vue'
 import Services from '@/components/Services.vue'
@@ -34,5 +35,6 @@ import { IconMapPinFilled } from '@tabler/icons-vue'
       <TopBanner />
       <Services />
       <Recomandations />
+      <History />
    </div>
 </template>
