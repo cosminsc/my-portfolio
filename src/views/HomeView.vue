@@ -1,5 +1,7 @@
 <script setup>
 import Languages from '@/components/Languages.vue'
+import Recomandations from '@/components/Recomandations.vue'
+import Services from '@/components/Services.vue'
 import Skills from '@/components/Skills.vue'
 import SocialMedia from '@/components/SocialMedia.vue'
 import TopBanner from '@/components/TopBanner.vue'
@@ -7,7 +9,7 @@ import { IconMapPinFilled } from '@tabler/icons-vue'
 </script>
 
 <template>
-   <div class="bg-zinc-800/70 min-h-[calc(100vh-32px)] max-w-[300px] min-w-[300px]">
+   <div class="bg-zinc-800/70 min-h-[calc(100vh-32px)] max-w-[300px] min-w-[300px] absolute left-0 top-4 bottom-4">
       <div class="bg-zinc-700/50 py-8 flex flex-col items-center">
          <img
             class="inline-block mb-4 size-28 rounded-full ring-3 ring-zinc-100"
@@ -28,7 +30,9 @@ import { IconMapPinFilled } from '@tabler/icons-vue'
          <Skills />
       </div>
    </div>
-   <div class="bg-zinc-800/40 w-full">
+   <div class="bg-zinc-800/40 min-h-[calc(100vh-32px)] space-y-6">
       <TopBanner />
+      <Services />
+      <Recomandations />
    </div>
 </template>
