@@ -19,7 +19,7 @@ import { IconMapPinFilled } from '@tabler/icons-vue'
          <div class="font-bold">Cosmin Șchiopu</div>
          <div class="text-sm text-zinc-500 text-center">Full-stack Web Developer &</div>
          <div class="text-sm text-zinc-500 mb-3 text-center">Design enthusiastic</div>
-         <div class="flex gap-2 items-center text-xs text-zinc-500">
+         <div class="flex gap-1 items-center text-xs text-zinc-500">
             <IconMapPinFilled size="14" />
             <span>Brasov, Romania</span>
          </div>

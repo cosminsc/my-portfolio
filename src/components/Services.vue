@@ -31,13 +31,13 @@ const list = [
 <template>
    <div class="px-8">
       <h2 class="text-2xl font-bold mb-5">My Services</h2>
-      <ul class="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-         <li v-for="(service, index) in list" class="p-4 bg-zinc-800" :key="index">
-            <h3 class="text-lg mb-3 flex items-center gap-2">
-               <component :is="service.icon" size="25" />
-               <span>{{ service.name }}</span>
-            </h3>
-            <p class="text-zinc-500">{{ service.description }}</p>
+      <ul class="grid gap-4 grid-cols-1 lg:grid-cols-2">
+         <li v-for="(service, index) in list" class="p-4 bg-zinc-800 flex items-center gap-4" :key="index">
+            <component :is="service.icon" size="100" class="max-w-32 w-full hidden md:block text-zinc-500" />
+            <div>
+               <h3 class="text-lg mb-3">{{ service.name }}</h3>
+               <p class="text-zinc-500">{{ service.description }}</p>
+            </div>
          </li>
       </ul>
    </div>

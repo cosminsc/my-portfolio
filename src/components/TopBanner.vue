@@ -13,7 +13,7 @@ onMounted(() => {
       ],
       typeSpeed: 20,
       backSpeed: 5,
-      backDelay: 1500,
+      backDelay: 2000,
       loop: true,
    })
 })
