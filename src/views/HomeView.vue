@@ -2,6 +2,7 @@
 import Languages from '@/components/Languages.vue'
 import Skills from '@/components/Skills.vue'
 import SocialMedia from '@/components/SocialMedia.vue'
+import TopBanner from '@/components/TopBanner.vue'
 import { IconMapPinFilled } from '@tabler/icons-vue'
 </script>
 
@@ -27,5 +28,7 @@ import { IconMapPinFilled } from '@tabler/icons-vue'
          <Skills />
       </div>
    </div>
-   <div class="bg-zinc-800/40 w-full p-6"></div>
+   <div class="bg-zinc-800/40 w-full">
+      <TopBanner />
+   </div>
 </template>
