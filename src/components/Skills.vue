@@ -17,7 +17,7 @@ const skillSet = [
             name: 'Self-taught & passionate',
             percentage: 100,
          },
-      ]
+      ],
    },
    {
       name: 'Web development',
