@@ -4,6 +4,7 @@ import { IconCalendarMonthFilled, IconCertificate, IconLink } from '@tabler/icon
 const workList = [
    {
       period: 'Apr 2019 - Present',
+      active: true,
       website: 'woosa.com',
       name: 'Technical Project Management and Web Development',
       description: 'Managing and guiding the technical aspects of web development, including project planning, architecture design, and quality control to meet business requirements.'
@@ -29,7 +30,7 @@ const workList = [
    {
       period: 'Jan 2010 - Sep 2012 (part-time)',
       website: 'forumgratuit.ro',
-      name: 'Graphic Designer (Volunteer - part-time)',
+      name: 'Graphic Designer (Volunteer)',
       description: 'As a volunteer graphic designer at ForumGratuit.ro, I created a wide range of custom graphic design packages tailored to customer needs. In addition to design work, I enhanced my technical skills in HTML, CSS, and the jQuery library by customizing static templates and forum layouts, ensuring a seamless user experience and visually appealing interfaces.'
    },
    {
@@ -59,8 +60,8 @@ const educationList = [
    <div class="px-8 pb-8">
       <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
          <div>
-            <h2 class="text-2xl font-bold mb-5">Work History</h2>
-            <div v-for="(item, index) in workList" class="timeline__item" :key="index">
+            <h2 class="text-2xl font-bold mb-5">Work</h2>
+            <div v-for="(item, index) in workList" class="timeline__item" :class="item.active ? 'active' : ''" :key="index">
                <div class="flex items-center text-sm text-zinc-400">
                   <div class="timeline__period text-xs flex items-center gap-1">
                      <IconCalendarMonthFilled size="14" />
@@ -115,6 +116,9 @@ const educationList = [
    left: -7px;
    background: #313135;
    z-index: 2;
+}
+.timeline__item.active:before{
+   background: #00a6f4;
 }
 .timeline__item:after {
    background-color: #313135;
