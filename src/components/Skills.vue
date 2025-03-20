@@ -3,14 +3,27 @@ import { IconCheck } from '@tabler/icons-vue'
 
 const skillSet = [
    {
+      name: 'Personal',
+      skills: [
+         {
+            name: 'Responsible & reliable',
+            percentage: 100,
+         },
+         {
+            name: 'Prompt & organized',
+            percentage: 100,
+         },
+         {
+            name: 'Self-taught & passionate',
+            percentage: 100,
+         },
+      ]
+   },
+   {
       name: 'Web development',
       skills: [
          {
-            name: 'HTML',
-            percentage: 95,
-         },
-         {
-            name: 'CSS',
+            name: 'HTML & CSS',
             percentage: 95,
          },
          {
