@@ -2,7 +2,7 @@
 import { IconMapPinFilled } from '@tabler/icons-vue'
 </script>
 <template>
-   <div class="bg-zinc-700/50 py-8 flex flex-col items-center">
+   <div class="bg-zinc-700/50 h-72 flex flex-col items-center justify-center">
       <img
          class="inline-block mb-4 size-28 rounded-full ring-3 ring-zinc-100"
          src="/images/author-avatar-small.jpg"

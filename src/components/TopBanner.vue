@@ -13,13 +13,13 @@ onMounted(() => {
       ],
       typeSpeed: 20,
       backSpeed: 5,
-      backDelay: 2500,
+      backDelay: 3000,
       loop: true,
    })
 })
 </script>
 <template>
-   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full h-80 mb-6">
+   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full h-72">
       <div class="w-full h-80 bg-zinc-900/70 p-8 flex flex-col justify-center">
          <h1 class="text-5xl font-montserrat font-extrabold mb-5">Discover my Awesome Work!</h1>
          <div class="flex items-center font-anonymousPro text-lg mb-5">
@@ -38,7 +38,7 @@ onMounted(() => {
          <a
             href="#"
             class="w-fit py-3 px-8 bg-yellow-600 hover:bg-yellow-700 transition-colors duration-300 uppercase text-sm font-bold tracking-wider"
-            >Check my work</a
+            >Book a call</a
          >
       </div>
    </div>

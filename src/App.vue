@@ -5,7 +5,7 @@ import Footer from './components/Footer.vue'
 import Languages from '@/components/Languages.vue'
 import Skills from '@/components/Skills.vue'
 import SocialMedia from '@/components/SocialMedia.vue'
-import TopNavBar from './components/TopNavBar.vue'
+import MainNavBar from './components/MainNavBar.vue'
 import AuthorInfo from './components/AuthorInfo.vue'
 </script>
 
@@ -22,8 +22,8 @@ import AuthorInfo from './components/AuthorInfo.vue'
       </div>
       <!-- Content -->
       <div class="bg-zinc-800/40 min-h-[calc(100vh-32px)] pb-11 relative">
-         <TopNavBar />
          <TopBanner />
+         <MainNavBar />
          <RouterView />
          <Footer />
       </div>
