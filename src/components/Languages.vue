@@ -22,6 +22,7 @@
                   cy="50"
                   stroke-dasharray="283"
                   stroke-dashoffset="0"
+                  transform="rotate(-90 50 50)"
                />
             </svg>
             <span class="absolute text-xs text-zinc-400">100%</span>
@@ -50,6 +51,7 @@
                   cy="50"
                   stroke-dasharray="283"
                   stroke-dashoffset="50"
+                  transform="rotate(-90 50 50)"
                />
             </svg>
             <span class="absolute text-xs text-zinc-400">80%</span>
@@ -78,6 +80,7 @@
                   cy="50"
                   stroke-dasharray="283"
                   stroke-dashoffset="250"
+                  transform="rotate(-90 50 50)"
                />
             </svg>
             <span class="absolute text-xs text-zinc-400">10%</span>
