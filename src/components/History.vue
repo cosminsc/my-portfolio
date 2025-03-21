@@ -56,7 +56,7 @@ const educationList = [
    },
    {
       period: 'Nov 2017',
-      website: '/certificates/certificate1.pdf',
+      website: '/certificates/certificate1.jpg',
       name: 'Course: Master JavaScript Closures, Data Structures and Map/Reduce',
       description:
          'This course focuses on the tools and techniques I need to understand to be effective and productive working on JavaScript in the real world.',

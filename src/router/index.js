@@ -10,16 +10,19 @@ const router = createRouter({
          path: '/',
          name: 'home',
          component: HomeView,
+         meta: { title: 'Home' },
       },
       {
          path: '/history',
          name: 'history',
          component: HistoryView,
+         meta: { title: 'History' },
       },
       {
          path: '/portfolio',
          name: 'Portfolio',
          component: PortfolioView,
+         meta: { title: 'Portfolio' },
       },
       // {
       //    path: '/about',
@@ -31,5 +34,12 @@ const router = createRouter({
       // },
    ],
 })
+
+router.beforeEach((to, from, next) => {
+   if (to.meta.title) {
+     document.title = to.meta.title + ' - ' + 'Craftmin Studio';
+   }
+   next();
+ });
 
 export default router

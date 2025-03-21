@@ -12,7 +12,7 @@ import {
    <div class="bg-zinc-700/25 p-2 w-full flex justify-evenly text-zinc-500">
       <a
          class="hover:text-yellow-600 hover:scale-110 transition-colors duration-300"
-         href="https://www.instagram.com/cosmin.sch/"
+         href="https://www.instagram.com/craftminstudio/"
          target="_blank"
          title="Find me on Instagram"
          ><IconBrandInstagramFilled size="20"
