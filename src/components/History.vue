@@ -48,11 +48,18 @@ const workList = [
 
 const educationList = [
    {
-      period: 'Nov 2017',
-      website: 'https://www.cosminsc.net/pdf/certificate1.pdf',
-      name: 'Master JavaScript Closures, Data Structures and Map/Reduce',
+      period: 'Jan 2020',
+      website: '/certificates/certificate2.jpg',
+      name: 'Course: Project Management - Growing a Successful Career as a Project Manager',
       description:
-         'This course focuses on the tools and techniques you need to understand to be effective and productive working on JavaScript in the real world. Get firmly grounded in the fundamentals of intermediate JavaScript with an eye to the future of this remarkable and evolving language.',
+         'I learned the fundamentals of project management, including the project lifecycle stages—initiating, planning, executing, monitoring, and closing—along with the key roles and responsibilities of a project manager.',
+   },
+   {
+      period: 'Nov 2017',
+      website: '/certificates/certificate1.pdf',
+      name: 'Course: Master JavaScript Closures, Data Structures and Map/Reduce',
+      description:
+         'This course focuses on the tools and techniques I need to understand to be effective and productive working on JavaScript in the real world.',
    },
    {
       period: '2005 - 2009',
