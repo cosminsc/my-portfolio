@@ -12,7 +12,7 @@ const list = [
       icon: IconBrandLaravel,
       name: 'Laravel applications',
       description:
-         'I build scalable and high-performance web applications using Laravel (+Vue.js), leveraging its powerful features to create secure and efficient solutions.',
+         'I build scalable and high-performance web applications using Laravel (+VueJs), leveraging its powerful features to create secure and efficient solutions.',
    },
    {
       icon: IconPencilBolt,

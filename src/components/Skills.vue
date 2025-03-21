@@ -82,7 +82,7 @@ const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'git
          </div>
       </div>
 
-      <div>
+      <div class="mb-12 md:mb-0">
          <div class="border-b-1 border-zinc-700 pb-1 mb-3">Toolkit</div>
          <div v-for="(item, index) in toolkit" :key="index" class="text-zinc-400 flex items-center gap-2 text-sm">
             <IconCheck size="18" class="text-sky-500" />

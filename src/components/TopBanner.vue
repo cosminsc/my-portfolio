@@ -18,10 +18,16 @@ onMounted(() => {
 })
 </script>
 <template>
-   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full h-96 lg:h-72">
-      <div class="w-full h-96 lg:h-80 bg-zinc-900/70 p-6 lg:p-8 flex flex-col justify-evenly items-center lg:items-start text-center lg:text-left">
-         <h1 class="leading-11 md:leading-16 lg:leading-none text-4xl xl:text-5xl font-montserrat font-extrabold">Discover my Awesome Work!</h1>
-         <div class="text-base md:text-lg min-h-16 xl:min-h-fit max-w-[500px]  lg:max-w-none flex items-center font-anonymousPro justify-center lg:justify-start">
+   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full">
+      <div
+         class="w-full h-96 lg:h-72 bg-zinc-900/70 px-6 lg:px-8 flex flex-col justify-evenly items-center lg:items-start text-center lg:text-left"
+      >
+         <h1 class="leading-11 md:leading-16 lg:leading-auto text-4xl xl:text-5xl font-montserrat font-extrabold">
+            Discover my Awesome Work!
+         </h1>
+         <div
+            class="text-base md:text-lg min-h-18 xl:min-h-fit max-w-[500px] lg:max-w-none flex items-center font-anonymousPro justify-center lg:justify-start"
+         >
             <div id="sentences"></div>
          </div>
          <a
