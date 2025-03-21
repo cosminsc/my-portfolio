@@ -66,7 +66,7 @@ const skillSet = [
 const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'gitlab, github', 'photoshop, lightroom']
 </script>
 <template>
-   <div class="space-y-7">
+   <div class="space-y-7 p-8">
       <div v-for="(item, index) in skillSet" :key="index">
          <div class="border-b-1 border-zinc-700 pb-1 mb-3">{{ item.name }}</div>
          <div class="text-sm space-y-3">

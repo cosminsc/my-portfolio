@@ -15,10 +15,7 @@ import AuthorInfo from './components/AuthorInfo.vue'
       <div class="bg-zinc-800/70 min-h-[calc(100vh-32px)] max-w-[300px] min-w-[300px] absolute left-0 top-4 bottom-4">
          <AuthorInfo />
          <SocialMedia />
-         <div class="px-8">
-            <Languages />
-            <Skills />
-         </div>
+         <Skills />
       </div>
       <!-- Content -->
       <div class="bg-zinc-800/40 min-h-[calc(100vh-32px)] pb-11 relative">

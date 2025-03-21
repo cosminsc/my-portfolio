@@ -4,6 +4,12 @@
          >Home</RouterLink
       >
       <RouterLink
+         to="/portfolio"
+         activeClass="text-yellow-600"
+         class="hover:text-yellow-700 transition-colors duration-300"
+         >Portfolio</RouterLink
+      >
+      <RouterLink
          to="/history"
          activeClass="text-yellow-600"
          class="hover:text-yellow-700 transition-colors duration-300"
