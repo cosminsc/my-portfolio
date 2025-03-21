@@ -32,10 +32,18 @@ const list = [
    <div class="px-8">
       <h2 class="text-2xl font-bold mb-5">My Services</h2>
       <ul class="grid gap-4 grid-cols-1 lg:grid-cols-2">
-         <li v-for="(service, index) in list" class="p-4 bg-zinc-800 transition duration-300 hover:bg-zinc-700/50 hover:cursor-default flex items-center gap-4 group" :key="index">
-            <component :is="service.icon" size="100" class="max-w-32 w-full hidden md:block text-zinc-500 transition duration-300 group-hover:text-blue-500" />
+         <li
+            v-for="(service, index) in list"
+            class="p-4 bg-zinc-800 transition duration-300 hover:bg-zinc-700/50 hover:cursor-default flex items-center gap-4 group"
+            :key="index"
+         >
+            <component
+               :is="service.icon"
+               size="100"
+               class="max-w-32 w-full hidden md:block text-zinc-500 transition duration-300 group-hover:text-blue-500"
+            />
             <div>
-               <h3 class="text-lg mb-3 ">{{ service.name }}</h3>
+               <h3 class="text-lg mb-3">{{ service.name }}</h3>
                <p class="text-zinc-500">{{ service.description }}</p>
             </div>
          </li>

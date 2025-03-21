@@ -42,7 +42,7 @@ const list = [
          :pagination-clickable="true"
          :autoplay="{
             delay: 2500,
-            pauseOnMouseEnter: true
+            pauseOnMouseEnter: true,
          }"
          :breakpoints="{
             1024: { slidesPerView: 2 },

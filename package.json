@@ -11,6 +11,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "@tabler/icons-vue": "^3.31.0",
     "@tailwindcss/vite": "^4.0.14",
     "pinia": "^3.0.1",
