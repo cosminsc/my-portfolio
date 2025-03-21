@@ -10,9 +10,9 @@ import AuthorInfo from './components/AuthorInfo.vue'
 </script>
 
 <template>
-   <div class="container mx-auto py-4 pl-[300px] relative">
+   <div class="container mx-auto py-4 lg:pl-[300px] relative">
       <!-- Sidebar -->
-      <div class="bg-zinc-800/70 min-h-[calc(100vh-32px)] max-w-[300px] min-w-[300px] absolute left-0 top-4 bottom-4">
+      <div class="bg-zinc-800/70 min-h-[calc(100vh-32px)] max-w-[300px] min-w-[300px] absolute left-0 top-4 bottom-4 hidden lg:block">
          <AuthorInfo />
          <SocialMedia />
          <Skills />

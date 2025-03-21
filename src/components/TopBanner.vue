@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { IconChevronLeft, IconChevronRight } from '@tabler/icons-vue'
 import Typed from 'typed.js'
 import { onMounted } from 'vue'
 
@@ -7,33 +6,23 @@ onMounted(() => {
    new Typed('#sentences', {
       strings: [
          'I develop custom WordPress plugins tailored to enhance functionality and performance.',
-         'I build scalable and efficient web applications using Laravel and Vue.js.',
+         'I build scalable and efficient web applications using Laravel and VueJs.',
          'I design professional and visually compelling logos that align with brand identity.',
          'I enhance and refine photos with expert-level editing techniques.',
       ],
       typeSpeed: 20,
       backSpeed: 5,
-      backDelay: 3000,
+      backDelay: 3500,
       loop: true,
    })
 })
 </script>
 <template>
-   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full h-72">
-      <div class="w-full h-80 bg-zinc-900/70 p-8 flex flex-col justify-center">
-         <h1 class="text-5xl font-montserrat font-extrabold mb-5">Discover my Awesome Work!</h1>
-         <div class="flex items-center font-anonymousPro text-lg mb-5">
-            <div class="flex items-center gap-0">
-               <IconChevronLeft size="15" />
-               <span class="text-sky-500">code</span>
-               <IconChevronRight size="15" />
-            </div>
+   <div class="bg-[url(/images/banner-bg.jpg)] bg-top bg-cover w-full h-96 lg:h-72">
+      <div class="w-full h-96 lg:h-80 bg-zinc-900/70 p-6 lg:p-8 flex flex-col justify-evenly items-center lg:items-start text-center lg:text-left">
+         <h1 class="leading-11 md:leading-16 lg:leading-none text-4xl xl:text-5xl font-montserrat font-extrabold">Discover my Awesome Work!</h1>
+         <div class="text-base md:text-lg min-h-16 xl:min-h-fit max-w-[500px]  lg:max-w-none flex items-center font-anonymousPro justify-center lg:justify-start">
             <div id="sentences"></div>
-            <div class="flex items-center gap-0">
-               <IconChevronLeft size="15" />/
-               <span class="text-sky-500 pl-[2px]">code</span>
-               <IconChevronRight size="15" />
-            </div>
          </div>
          <a
             href="https://calendly.com/sc-cosmin/intro-chat"

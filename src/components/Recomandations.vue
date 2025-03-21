@@ -33,34 +33,33 @@ const list = [
 ]
 </script>
 <template>
-   <div class="px-8">
-      <h2 class="text-2xl font-bold mb-5">Recommendations</h2>
-      <swiper-container
-         :speed="1000"
-         :space-between="16"
-         :pagination="true"
-         :pagination-clickable="true"
-         :autoplay="{
-            delay: 2500,
-            pauseOnMouseEnter: true,
-         }"
-         :breakpoints="{
-            1024: { slidesPerView: 2 },
-            1280: { slidesPerView: 3 },
-         }"
-      >
-         <swiper-slide v-for="(item, index) in list" :key="index">
-            <div class="p-4 bg-zinc-800">
-               <h3 class="text-lg">{{ item.author }}</h3>
-               <div class="text-sm text-zinc-600 flex items-center gap-1 mt-1 mb-3">
-                  <IconMapPinFilled size="14" />
-                  <span>{{ item.country }}</span>
-               </div>
-               <div class="min-h-40 overflow-auto">
-                  <p class="text-zinc-500 italic text-sm">{{ item.quote }}</p>
-               </div>
+   <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Recommendations</h2>
+   <swiper-container
+      :speed="1000"
+      :space-between="16"
+      :pagination="true"
+      :loop="true"
+      :pagination-clickable="true"
+      :autoplay="{
+         delay: 2500,
+         pauseOnMouseEnter: true,
+      }"
+      :breakpoints="{
+         768: { slidesPerView: 2 },
+         1280: { slidesPerView: 3 },
+      }"
+   >
+      <swiper-slide v-for="(item, index) in list" :key="index">
+         <div class="p-4 bg-zinc-800 text-center lg:text-left">
+            <h3 class="text-lg">{{ item.author }}</h3>
+            <div class="text-sm text-zinc-600 flex items-center justify-center lg:justify-start gap-1 mt-1 mb-3">
+               <IconMapPinFilled size="14" />
+               <span>{{ item.country }}</span>
             </div>
-         </swiper-slide>
-      </swiper-container>
-   </div>
+            <div class="min-h-40 overflow-auto">
+               <p class="text-zinc-500 italic text-sm">{{ item.quote }}</p>
+            </div>
+         </div>
+      </swiper-slide>
+   </swiper-container>
 </template>

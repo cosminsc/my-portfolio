@@ -61,8 +61,9 @@ onMounted(() => {
 })
 </script>
 <template>
-   <div class="px-8">
-      <ul class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+   <div class="space-y-6 lg:space-y-8 p-6 lg:p-8">
+      <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Portfolio</h2>
+      <ul class="grid gap-6 grid-cols-1 sm:grid-cols-2">
          <li v-for="(item, index) in list" :key="index" class="relative overflow-hidden group">
             <a :href="item.fullSize" :data-fancybox="`gallery-${index}`" :data-caption="item.description">
                <img

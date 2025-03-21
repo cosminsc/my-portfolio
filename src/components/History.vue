@@ -63,54 +63,52 @@ const educationList = [
 ]
 </script>
 <template>
-   <div class="px-8 pb-8">
-      <div class="grid gap-4 grid-cols-1 lg:grid-cols-2">
-         <div>
-            <h2 class="text-2xl font-bold mb-5">Work</h2>
+   <div class="grid gap-4 grid-cols-1 xl:grid-cols-2">
+      <div>
+         <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Work</h2>
+         <div
+            v-for="(item, index) in workList"
+            class="timeline__item"
+            :class="item.active ? 'active' : ''"
+            :key="index"
+         >
+            <div class="flex items-center text-sm text-zinc-400">
+               <div class="timeline__period text-xs flex items-center gap-1">
+                  <IconCalendarMonthFilled size="14" />
+                  <span>{{ item.period }}</span>
+               </div>
+            </div>
+            <div class="text-lg">{{ item.name }}</div>
             <div
-               v-for="(item, index) in workList"
-               class="timeline__item"
-               :class="item.active ? 'active' : ''"
-               :key="index"
+               v-if="item.website"
+               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
             >
-               <div class="flex items-center text-sm text-zinc-400">
-                  <div class="timeline__period text-xs flex items-center gap-1">
-                     <IconCalendarMonthFilled size="14" />
-                     <span>{{ item.period }}</span>
-                  </div>
-               </div>
-               <div class="text-lg">{{ item.name }}</div>
-               <div
-                  v-if="item.website"
-                  class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
+               <IconLink size="14" />
+               <a :href="`https://${item.website}`" target="_blank"
+                  ><span>{{ item.website }}</span></a
                >
-                  <IconLink size="14" />
-                  <a :href="`https://${item.website}`" target="_blank"
-                     ><span>{{ item.website }}</span></a
-                  >
-               </div>
-               <div class="timeline__description text-zinc-500">{{ item.description }}</div>
             </div>
+            <div class="timeline__description text-zinc-500">{{ item.description }}</div>
          </div>
-         <div>
-            <h2 class="text-2xl font-bold mb-5">Education</h2>
-            <div v-for="(item, index) in educationList" class="timeline__item" :key="index">
-               <div class="flex items-center text-sm text-zinc-400">
-                  <div class="timeline__period text-xs flex items-center gap-1">
-                     <IconCalendarMonthFilled size="14" />
-                     <span>{{ item.period }}</span>
-                  </div>
+      </div>
+      <div>
+         <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Education</h2>
+         <div v-for="(item, index) in educationList" class="timeline__item" :key="index">
+            <div class="flex items-center text-sm text-zinc-400">
+               <div class="timeline__period text-xs flex items-center gap-1">
+                  <IconCalendarMonthFilled size="14" />
+                  <span>{{ item.period }}</span>
                </div>
-               <div class="text-lg">{{ item.name }}</div>
-               <div
-                  v-if="item.website"
-                  class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
-               >
-                  <IconCertificate size="15" />
-                  <a :href="item.website" target="_blank"><span>Certificate</span></a>
-               </div>
-               <div class="timeline__description text-zinc-500">{{ item.description }}</div>
             </div>
+            <div class="text-lg">{{ item.name }}</div>
+            <div
+               v-if="item.website"
+               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
+            >
+               <IconCertificate size="15" />
+               <a :href="item.website" target="_blank"><span>Certificate</span></a>
+            </div>
+            <div class="timeline__description text-zinc-500">{{ item.description }}</div>
          </div>
       </div>
    </div>
