@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import HistoryView from '@/views/HistoryView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
+import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
    history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -24,6 +25,12 @@ const router = createRouter({
          component: PortfolioView,
          meta: { title: 'Portfolio' },
       },
+      {
+         path: '/:pathMatch(.*)*',
+         name: 'NotFound',
+         component: NotFoundView,
+         meta: { title: 'Not Found' },
+      },
       // {
       //    path: '/about',
       //    name: 'about',
@@ -37,9 +44,9 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
    if (to.meta.title) {
-     document.title = to.meta.title + ' - ' + 'Craftmin Studio';
+      document.title = to.meta.title + ' - ' + 'Craftmin Studio'
    }
-   next();
- });
+   next()
+})
 
 export default router

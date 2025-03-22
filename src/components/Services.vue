@@ -22,7 +22,7 @@ const list = [
    },
    {
       icon: IconPhotoEdit,
-      name: 'Photo editting',
+      name: 'Photo editing',
       description:
          'I enhance images through advanced photo editing techniques, improving colors, sharpness, and composition to deliver stunning visuals.',
    },
