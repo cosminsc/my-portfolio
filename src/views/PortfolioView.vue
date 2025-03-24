@@ -1,9 +1,10 @@
 <script setup>
+import { usePagination } from '@/composables/usePagination'
 import { Fancybox } from '@fancyapps/ui'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 
-const list = [
+const list = ref([
    {
       description: 'Website design',
       fullSize: '/images/portfolio/greenbusiness.jpg',
@@ -54,7 +55,9 @@ const list = [
    //       },
    //    ],
    // },
-]
+])
+
+const { currentPage, totalPages, paginatedList, prevPage, nextPage } = usePagination(list.value, 15)
 
 onMounted(() => {
    Fancybox.bind('[data-fancybox]', {})
@@ -64,7 +67,7 @@ onMounted(() => {
    <div class="space-y-6 lg:space-y-8 p-6 lg:p-8">
       <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Portfolio</h2>
       <ul class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-         <li v-for="(item, index) in list" :key="index" class="relative overflow-hidden group">
+         <li v-for="(item, index) in paginatedList" :key="index" class="relative overflow-hidden group">
             <a :href="item.fullSize" :data-fancybox="`gallery-${index}`" :data-caption="item.description">
                <img
                   :src="item.thumbailSize"
@@ -89,5 +92,22 @@ onMounted(() => {
             </div>
          </li>
       </ul>
+      <div v-if="totalPages > 1" class="flex justify-start items-center gap-4 mt-4 text-sm">
+         <button
+            @click="prevPage"
+            :disabled="currentPage === 1"
+            class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
+         >
+            Prev
+         </button>
+         <span class="text-zinc-500">Page {{ currentPage }} of {{ totalPages }}</span>
+         <button
+            @click="nextPage"
+            :disabled="currentPage === totalPages"
+            class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
+         >
+            Next
+         </button>
+      </div>
    </div>
 </template>
