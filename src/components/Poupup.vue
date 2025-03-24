@@ -59,7 +59,7 @@ watch(isPopupEnabled, (newVal) => {
                            </li>
                            <li class="flex items-center gap-2 text-sm">
                               <IconCheck size="18" class="text-sky-500 shrink-0" />
-                              <span>Social media profile image</span>
+                              <span>Social media profile images</span>
                            </li>
                         </ul>
                      </li>
@@ -73,7 +73,7 @@ watch(isPopupEnabled, (newVal) => {
                            </li>
                            <li class="flex items-center gap-2 text-sm">
                               <IconCheck size="18" class="text-sky-500 shrink-0" />
-                              <span>Unlimited revisions</span>
+                              <span>10 rounds of revisions</span>
                            </li>
                            <li class="flex items-center gap-2 text-sm">
                               <IconCheck size="18" class="text-sky-500 shrink-0" />
@@ -81,7 +81,7 @@ watch(isPopupEnabled, (newVal) => {
                            </li>
                            <li class="flex items-center gap-2 text-sm">
                               <IconCheck size="18" class="text-sky-500 shrink-0" />
-                              <span>Business card design</span>
+                              <span>2 Business card designs</span>
                            </li>
                         </ul>
                      </li>

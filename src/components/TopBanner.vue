@@ -8,7 +8,6 @@ onMounted(() => {
          'I develop custom WordPress plugins tailored to enhance functionality and performance.',
          'I build scalable and efficient web applications using Laravel and VueJs.',
          'I design professional and visually compelling logos that align with brand identity.',
-         'I enhance and refine photos with expert-level editing techniques.',
       ],
       typeSpeed: 20,
       backSpeed: 5,
