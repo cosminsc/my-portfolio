@@ -27,7 +27,7 @@ watch(isPopupEnabled, (newVal) => {
                <IconX
                   @click="popupStore.hidePopup"
                   size="25"
-                  class="absolute -top-3 -right-3 z-60 cursor-pointer hover:text-yellow-600 transition duration-300"
+                  class="absolute top-0 right-0 z-60 cursor-pointer hover:text-yellow-600 transition duration-300"
                />
                <div v-if="'logo' === popupType">
                   <ul class="grid gap-4 grid-cols-1 md:grid-cols-3">
@@ -86,6 +86,14 @@ watch(isPopupEnabled, (newVal) => {
                         </ul>
                      </li>
                   </ul>
+               </div>
+               <div class="flex justify-center pt-4">
+                  <RouterLink
+                     to="/contact"
+                     @click="popupStore.hidePopup"
+                     class="w-fit py-3 px-8 bg-yellow-600 hover:bg-yellow-700 transition duration-300 uppercase text-sm font-bold tracking-wider"
+                     >Order Now</RouterLink
+                  >
                </div>
             </div>
          </div>
