@@ -88,7 +88,7 @@ const educationList = [
             <div class="text-lg">{{ item.name }}</div>
             <div
                v-if="item.website"
-               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
+               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition duration-300"
             >
                <IconLink size="14" />
                <a :href="`https://${item.website}`" target="_blank"
@@ -110,7 +110,7 @@ const educationList = [
             <div class="text-lg">{{ item.name }}</div>
             <div
                v-if="item.website"
-               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition-colors duration-300"
+               class="flex items-center gap-1 text-yellow-600 hover:text-yellow-700 transition duration-300"
             >
                <IconCertificate size="15" />
                <a :href="item.website" target="_blank"><span>Certificate</span></a>

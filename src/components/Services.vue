@@ -1,5 +1,8 @@
 <script setup lang="ts">
-import { IconBrandLaravel, IconBrandWordpress, IconPencilBolt, IconPhotoEdit } from '@tabler/icons-vue'
+import { IconChevronsRight, IconBrandLaravel, IconBrandWordpress, IconPencilBolt, IconPhotoEdit } from '@tabler/icons-vue'
+import { usePopupStore } from '@/stores/popup';
+
+const popupStore = usePopupStore();
 
 const list = [
    {
@@ -17,12 +20,14 @@ const list = [
    {
       icon: IconPencilBolt,
       name: 'Logo designs',
+      pricingType: 'logo',
       description:
          'I craft visually compelling and memorable logo designs that align with brand identity, ensuring a strong and professional presence.',
    },
    {
       icon: IconPhotoEdit,
       name: 'Photo editing',
+      pricingType: 'photo',
       description:
          'I enhance images through advanced photo editing techniques, improving colors, sharpness, and composition to deliver stunning visuals.',
    },
@@ -43,7 +48,11 @@ const list = [
          />
          <div class="pt-4 lg:pt-0">
             <h3 class="text-lg mb-3">{{ service.name }}</h3>
-            <p class="text-zinc-500">{{ service.description }}</p>
+            <p class="text-zinc-500 mb-2">{{ service.description }}</p>
+            <button v-if="service.pricingType" @click="popupStore.showPopup(service.pricingType)" type="button" class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center gap-1">
+               <IconChevronsRight size="20" />
+               <span>View Pricing</span>
+            </button>
          </div>
       </li>
    </ul>
