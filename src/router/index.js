@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '@/views/HomeView.vue'
 import HistoryView from '@/views/HistoryView.vue'
 import PortfolioView from '@/views/PortfolioView.vue'
+import ContactView from '@/views/ContactView.vue'
 import NotFoundView from '@/views/NotFoundView.vue'
 
 const router = createRouter({
@@ -24,6 +25,12 @@ const router = createRouter({
          name: 'Portfolio',
          component: PortfolioView,
          meta: { title: 'Portfolio' },
+      },
+      {
+         path: '/contact',
+         name: 'Contact',
+         component: ContactView,
+         meta: { title: 'Contact' },
       },
       {
          path: '/:pathMatch(.*)*',

@@ -52,21 +52,25 @@ const skillSet = [
       name: 'Graphic design',
       skills: [
          {
-            name: 'Logo creation',
-            percentage: 95,
+            name: 'Photoshop',
+            percentage: 90,
          },
          {
-            name: 'Photo editing',
-            percentage: 95,
+            name: 'Lightroom',
+            percentage: 80,
+         },
+         {
+            name: 'Illustrator',
+            percentage: 60,
          },
       ],
    },
 ]
 
-const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'gitlab, github', 'photoshop, lightroom']
+const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'gitlab, github']
 </script>
 <template>
-   <div class="space-y-7 p-8">
+   <div class="space-y-7 p-8 mb-15">
       <div v-for="(item, index) in skillSet" :key="index">
          <div class="border-b-1 border-zinc-700 pb-1 mb-3">{{ item.name }}</div>
          <div class="text-sm space-y-3">

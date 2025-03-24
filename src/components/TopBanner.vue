@@ -30,11 +30,10 @@ onMounted(() => {
          >
             <div id="sentences"></div>
          </div>
-         <a
-            href="https://calendly.com/sc-cosmin/intro-chat"
-            target="_blank"
+         <RouterLink
+            to="/contact"
             class="w-fit py-3 px-8 bg-yellow-600 hover:bg-yellow-700 transition duration-300 uppercase text-sm font-bold tracking-wider"
-            >Book a call</a
+            >Contact Me</RouterLink
          >
       </div>
    </div>
