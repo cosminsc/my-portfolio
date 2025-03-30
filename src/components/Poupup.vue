@@ -81,7 +81,7 @@ watch(isPopupEnabled, (newVal) => {
                            </li>
                            <li class="flex items-center gap-2 text-sm">
                               <IconCheck size="18" class="text-sky-500 shrink-0" />
-                              <span>2 Business card designs</span>
+                              <span>1 Business card design</span>
                            </li>
                         </ul>
                      </li>
