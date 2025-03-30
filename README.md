@@ -1,6 +1,6 @@
 # MyPortfolio
 
-This is v2 of my personal website that can be checked here: [text](https://craftminstudio.com/)
+This is v2 of my personal website that can be checked here: [craftminstudio.com](https://craftminstudio.com/)
 
 ## Recommended IDE Setup
 
