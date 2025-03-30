@@ -1,6 +1,6 @@
 # MyPortfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+This is v2 of my personal website that can be checked here: [text](https://craftminstudio.com/)
 
 ## Recommended IDE Setup
 
