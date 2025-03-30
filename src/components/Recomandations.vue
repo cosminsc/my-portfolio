@@ -33,7 +33,7 @@ const list = [
 ]
 </script>
 <template>
-   <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Recommendations</h2>
+   <h2 class="text-2xl text-center lg:text-left font-bold mb-5">What My Clients Say</h2>
    <swiper-container
       :speed="1000"
       :space-between="16"

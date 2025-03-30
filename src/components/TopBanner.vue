@@ -6,6 +6,7 @@ onMounted(() => {
    new Typed('#sentences', {
       strings: [
          'I develop custom WordPress plugins tailored to enhance functionality and performance.',
+         'I ensure seamless WordPress theme setup and customization for a professional online presence.',
          'I build scalable and efficient web applications using Laravel and VueJs.',
          'I design professional and visually compelling logos that align with brand identity.',
       ],

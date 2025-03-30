@@ -91,9 +91,11 @@ const submitForm = async () => {
                      class="block min-w-0 w-full grow h-9 px-3 focus:outline-1 focus:outline-sky-700 bg-zinc-700/50 border-none appearance-none"
                   >
                      <option class="bg-zinc-700 text-zinc-400" value="Wordpress Plugin">Wordpress Plugin</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="Setup Wordpress Theme">
+                        Setup Wordpress Theme
+                     </option>
                      <option class="bg-zinc-700 text-zinc-400" value="Laravel Application">Laravel Application</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Logo Design">Logo Design</option>
-                     <option class="bg-zinc-700 text-zinc-400" value="Photo Editing">Photo Editing</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Other">Other</option>
                   </select>
                </div>
@@ -123,7 +125,7 @@ const submitForm = async () => {
                   <button
                      v-else
                      type="submit"
-                     class="w-fit py-3 px-8 bg-zinc-700 hover:bg-zinc-600 transition duration-300 uppercase text-sm font-bold tracking-wider cursor-pointer"
+                     class="w-fit py-3 px-8 bg-zinc-700 hover:bg-zinc-600 hover:text-zinc-200 transition duration-300 uppercase text-sm text-zinc-400 font-bold tracking-wider cursor-pointer"
                   >
                      Send Message
                   </button>

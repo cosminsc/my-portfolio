@@ -1,25 +1,26 @@
 <script setup lang="ts">
-import {
-   IconChevronsRight,
-   IconBrandLaravel,
-   IconBrandWordpress,
-   IconPencilBolt,
-   IconPhotoEdit,
-} from '@tabler/icons-vue'
+import { IconChevronsRight, IconApps, IconPlug, IconPencilBolt, IconTemplate } from '@tabler/icons-vue'
 import { usePopupStore } from '@/stores/popup'
 
 const popupStore = usePopupStore()
 
 const list = [
    {
-      icon: IconBrandWordpress,
-      name: 'Wordpress plugins',
+      icon: IconPlug,
+      name: 'Wordpress Integrations',
       description:
          'I develop tailor-made WordPress plugins to extend functionality, improve performance, and meet specific business needs with clean and efficient code.',
    },
    {
-      icon: IconBrandLaravel,
-      name: 'Laravel applications',
+      icon: IconTemplate,
+      name: 'Setup Business Websites',
+      pricingType: 'setupWpTheme',
+      description:
+         'I set up and customize WordPress themes to create a visually appealing and fully functional website, ensuring optimal performance.',
+   },
+   {
+      icon: IconApps,
+      name: 'Custom applications',
       description:
          'I build scalable and high-performance web applications using Laravel, leveraging its powerful features to create secure and efficient solutions.',
    },

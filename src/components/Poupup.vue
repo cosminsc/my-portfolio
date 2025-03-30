@@ -87,6 +87,80 @@ watch(isPopupEnabled, (newVal) => {
                      </li>
                   </ul>
                </div>
+               <div v-if="'setupWpTheme' === popupType">
+                  <ul class="grid gap-4 grid-cols-1 md:grid-cols-3">
+                     <li class="bg-zinc-700 p-4 space-y-4">
+                        <div class="text-lg font-bold">Basic</div>
+                        <div class="text-3xl font-bold font-montserrat">€399</div>
+                        <ul class="space-y-2">
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Theme installation and activation</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Import demo content (if available)</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Basic customization (logo, colors, fonts)</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Essential plugin installation (SEO, security, caching)</span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="bg-zinc-700 p-4 space-y-4">
+                        <div class="text-lg font-bold">Standard</div>
+                        <div class="text-3xl font-bold font-montserrat">€899</div>
+                        <ul class="space-y-2">
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Everything in the Basic Plan</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Advanced customization (layouts, menus, widgets)</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Homepage and key pages setup (About, Contact, Blog)</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Performance optimization (image compression, caching)</span>
+                           </li>
+                        </ul>
+                     </li>
+                     <li class="bg-zinc-700 p-4 space-y-4">
+                        <div class="text-lg font-bold">Premium</div>
+                        <div class="text-3xl font-bold font-montserrat">€1599</div>
+                        <ul class="space-y-2">
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Everything in the Standard Plan</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Old website migration</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Full website customization based on brand identity</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>WooCommerce setup (if needed)</span>
+                           </li>
+                           <li class="flex items-center gap-2 text-sm">
+                              <IconCheck size="18" class="text-sky-500 shrink-0" />
+                              <span>Custom CSS adjustments for a unique look</span>
+                           </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
                <div class="flex justify-center pt-4">
                   <RouterLink
                      to="/contact"

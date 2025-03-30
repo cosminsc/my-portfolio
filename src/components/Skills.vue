@@ -53,11 +53,11 @@ const skillSet = [
       skills: [
          {
             name: 'Photoshop',
-            percentage: 90,
+            percentage: 95,
          },
          {
             name: 'Lightroom',
-            percentage: 80,
+            percentage: 95,
          },
          {
             name: 'Illustrator',
@@ -67,7 +67,7 @@ const skillSet = [
    },
 ]
 
-const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'gitlab, github']
+const toolkit = ['tailwind, bootstrap, materialize', 'composer, npm, gulp', 'gitlab, github', 'JIRA, Discord']
 </script>
 <template>
    <div class="space-y-7 p-8 mb-15">
