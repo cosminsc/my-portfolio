@@ -53,7 +53,7 @@ const list = [
                v-if="service.pricingType"
                @click="popupStore.showPopup(service.pricingType)"
                type="button"
-               class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center justify-center lg:justify-start w-fit gap-1"
+               class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center gap-1 w-fit m-auto lg:m-0 lg:justify-start"
             >
                <IconChevronsRight size="20" />
                <span>View Pricing</span>
@@ -61,7 +61,7 @@ const list = [
             <RouterLink
                v-else
                to="/contact"
-               class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center justify-center lg:justify-start w-fit gap-1"
+               class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center gap-1 w-fit m-auto lg:m-0 lg:justify-start"
             >
                <IconChevronsRight size="20" />
                <span>Request a Quote</span>
