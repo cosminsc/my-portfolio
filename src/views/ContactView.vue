@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { IconClipboardTextFilled, IconMailFilled, IconMessageFilled, IconUserFilled } from '@tabler/icons-vue'
+import { IconClipboardTextFilled, IconMailFilled, IconMessageFilled, IconUserFilled, IconWallet } from '@tabler/icons-vue'
 import { ref } from 'vue'
 
 const resultMessage = ref(null)
@@ -8,6 +8,7 @@ const formData = ref({
    name: '',
    email: '',
    project: '',
+   budget: '',
    message: '',
    access_key: '57c2b0a1-154c-495d-b538-167eba2a5480',
 })
@@ -30,6 +31,7 @@ const submitForm = async () => {
       formData.value.name = ''
       formData.value.email = ''
       formData.value.project = ''
+      formData.value.budget = ''
       formData.value.message = ''
    }
 
@@ -40,7 +42,7 @@ const submitForm = async () => {
 </script>
 <template>
    <div class="space-y-6 lg:space-y-8 p-6 lg:p-8">
-      <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Contact</h2>
+      <h2 class="text-2xl text-center xl:text-left font-bold mb-5">Contact</h2>
       <form @submit.prevent="submitForm">
          <div class="bg-zinc-800 p-6 lg:p-8 space-y-6">
             <div class="md:grid md:grid-cols-[20%_80%]">
@@ -101,6 +103,27 @@ const submitForm = async () => {
                </div>
             </div>
             <div class="md:grid md:grid-cols-[20%_80%]">
+               <label for="project" class="flex items-center gap-1 h-9 text-zinc-500">
+                  <IconWallet />
+                  <span>Budget</span>
+               </label>
+               <div>
+                  <select
+                     name="budget"
+                     required
+                     id="budget"
+                     v-model="formData.budget"
+                     class="block min-w-0 w-full grow h-9 px-3 focus:outline-1 focus:outline-sky-700 bg-zinc-700/50 border-none appearance-none"
+                  >
+                     <option class="bg-zinc-700 text-zinc-400" value="0-500">0 - 500 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="500-1000">500 - 1000 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="1000-1500">1000 - 1500 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="2000-3000">2000 - 3000 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="5000">Over 5000 EUR</option>
+                  </select>
+               </div>
+            </div>
+            <div class="md:grid md:grid-cols-[20%_80%]">
                <label for="message" class="flex items-center gap-1 h-9 text-zinc-500">
                   <IconMessageFilled />
                   <span>Message</span>
@@ -110,7 +133,7 @@ const submitForm = async () => {
                      name="message"
                      required
                      id="message"
-                     rows="6"
+                     rows="10"
                      v-model="formData.message"
                      class="block min-w-0 w-full grow p-3 focus:outline-1 focus:outline-sky-700 bg-zinc-700/50"
                   ></textarea>

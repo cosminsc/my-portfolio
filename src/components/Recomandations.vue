@@ -33,7 +33,7 @@ const list = [
 ]
 </script>
 <template>
-   <h2 class="text-2xl text-center lg:text-left font-bold mb-5">What My Clients Say</h2>
+   <h2 class="text-2xl text-center xl:text-left font-bold mb-5">What Do My Clients Say?</h2>
    <swiper-container
       :speed="1000"
       :space-between="16"
@@ -50,9 +50,9 @@ const list = [
       }"
    >
       <swiper-slide v-for="(item, index) in list" :key="index">
-         <div class="p-4 bg-zinc-800 text-center lg:text-left">
+         <div class="p-4 bg-zinc-800 text-center xl:text-left">
             <h3 class="text-lg">{{ item.author }}</h3>
-            <div class="text-sm text-zinc-600 flex items-center justify-center lg:justify-start gap-1 mt-1 mb-3">
+            <div class="text-sm text-zinc-600 flex items-center justify-center xl:justify-start gap-1 mt-1 mb-3">
                <IconMapPinFilled size="14" />
                <span>{{ item.country }}</span>
             </div>

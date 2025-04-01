@@ -64,50 +64,48 @@ onMounted(() => {
 })
 </script>
 <template>
-   <div class="space-y-6 lg:space-y-8 p-6 lg:p-8">
-      <h2 class="text-2xl text-center lg:text-left font-bold mb-5">Portfolio</h2>
-      <ul class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-         <li v-for="(item, index) in paginatedList" :key="index" class="relative overflow-hidden group">
-            <a :href="item.fullSize" :data-fancybox="`gallery-${index}`" :data-caption="item.description">
-               <img
-                  :src="item.thumbailSize"
-                  class="transition duration-400 opacity-80 hover:opacity-100 hover:scale-105 w-full"
-               />
-            </a>
-            <div v-if="item.gallery" class="hidden">
-               <a
-                  v-for="(itemGallery, indexGallery) in item.gallery"
-                  :key="indexGallery"
-                  :href="itemGallery.fullSize"
-                  :data-fancybox="`gallery-${index}`"
-                  :data-caption="itemGallery.description ?? item.description"
-               >
-                  <img :src="itemGallery.thumbailSize" />
-               </a>
-            </div>
-            <div
-               class="bg-zinc-800/90 h-fit absolute left-0 bottom-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-600 ease-in-out"
+   <h2 class="text-2xl text-center xl:text-left font-bold mb-5">Client Projects</h2>
+   <ul class="grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">
+      <li v-for="(item, index) in paginatedList" :key="index" class="relative overflow-hidden group">
+         <a :href="item.fullSize" :data-fancybox="`gallery-${index}`" :data-caption="item.description">
+            <img
+               :src="item.thumbailSize"
+               class="transition duration-400 opacity-80 hover:opacity-100 hover:scale-105 w-full"
+            />
+         </a>
+         <div v-if="item.gallery" class="hidden">
+            <a
+               v-for="(itemGallery, indexGallery) in item.gallery"
+               :key="indexGallery"
+               :href="itemGallery.fullSize"
+               :data-fancybox="`gallery-${index}`"
+               :data-caption="itemGallery.description ?? item.description"
             >
-               {{ item.description }}
-            </div>
-         </li>
-      </ul>
-      <div v-if="totalPages > 1" class="flex justify-start items-center gap-4 mt-4 text-sm">
-         <button
-            @click="prevPage"
-            :disabled="currentPage === 1"
-            class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
+               <img :src="itemGallery.thumbailSize" />
+            </a>
+         </div>
+         <div
+            class="bg-zinc-800/90 h-fit absolute left-0 bottom-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-600 ease-in-out"
          >
-            Prev
-         </button>
-         <span class="text-zinc-500">Page {{ currentPage }} of {{ totalPages }}</span>
-         <button
-            @click="nextPage"
-            :disabled="currentPage === totalPages"
-            class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
-         >
-            Next
-         </button>
-      </div>
+            {{ item.description }}
+         </div>
+      </li>
+   </ul>
+   <div v-if="totalPages > 1" class="flex justify-start items-center gap-4 mt-4 text-sm">
+      <button
+         @click="prevPage"
+         :disabled="currentPage === 1"
+         class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
+      >
+         Prev
+      </button>
+      <span class="text-zinc-500">Page {{ currentPage }} of {{ totalPages }}</span>
+      <button
+         @click="nextPage"
+         :disabled="currentPage === totalPages"
+         class="px-2 py-1 bg-zinc-700 cursor-pointer hover:bg-zinc-600 hover:disabled:bg-zinc-700 disabled:opacity-50 rounded"
+      >
+         Next
+      </button>
    </div>
 </template>
