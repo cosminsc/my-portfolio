@@ -30,11 +30,11 @@ watch(isSidebarOpen, (newVal) => {
    <div class="lg:container mx-auto py-0 lg:py-4 lg:pl-[300px] relative">
       <div
          @click="toggleSidebar"
-         class="fixed z-50 flex items-center justify-end lg:hidden left-0 top-30 bg-zinc-600 pr-3 h-16 w-16 rounded-r-full shadow cursor-pointer"
-         :class="{ hidden: isSidebarOpen }"
+         class="transition-all duration-800 ease-in-out fixed z-50 flex items-center justify-end lg:hidden left-0 top-1 bg-zinc-600 pr-2 h-14 w-14 rounded-r-full shadow cursor-pointer"
+         :class="isSidebarOpen ? 'translate-x-0 left-[300px]' : 'left-0'"
       >
          <img
-            class="inline-block size-11 rounded-full ring-2 ring-sky-500"
+            class="inline-block size-10 rounded-full ring-2 ring-sky-500"
             src="/images/author-avatar-small.jpg"
             alt=""
          />

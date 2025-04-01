@@ -3,7 +3,7 @@
       <div
          class="w-full h-85 lg:h-72 bg-zinc-900/70 px-6 lg:px-8 flex flex-col justify-evenly items-center text-center"
       >
-         <h1 class="leading-11 md:leading-16 lg:leading-auto text-4xl xl:text-5xl font-montserrat font-extrabold">
+         <h1 class="text-3xl sm:text-4xl xl:text-5xl font-montserrat font-extrabold">
             Specialized in web development <br/> and logo designs.
          </h1>
          <RouterLink

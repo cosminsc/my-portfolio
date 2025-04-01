@@ -35,7 +35,7 @@ const list = [
 </script>
 <template>
    <h2 class="text-2xl text-center xl:text-left font-bold mb-5">What Do I offer?</h2>
-   <ul class="grid gap-4 grid-cols-1 md:grid-cols-2">
+   <ul class="grid gap-4 grid-cols-1 sm:grid-cols-2">
       <li
          v-for="(service, index) in list"
          class="p-4 bg-zinc-800 transition duration-300 hover:bg-zinc-700/50 hover:cursor-default text-center xl:text-left grid xl:grid-cols-[24%_74%] xl:gap-2 group"
@@ -44,7 +44,7 @@ const list = [
          <component
             :is="service.icon"
             size="100"
-            class="m-auto xl:m-0 xl:m-auto text-zinc-500 transition duration-300 group-hover:text-blue-500"
+            class="m-auto hidden sm:block xl:m-0 xl:m-auto text-zinc-500 transition duration-300 group-hover:text-blue-500"
          />
          <div class="pt-4 xl:pt-0">
             <h3 class="text-lg mb-3">{{ service.name }}</h3>
