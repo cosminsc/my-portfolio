@@ -21,6 +21,10 @@ const router = createRouter({
          meta: { title: 'History' },
       },
       {
+         path: "/portfolio",
+         redirect: "/projects"
+      },
+      {
          path: '/projects',
          name: 'Projects',
          component: ProjectsView,
