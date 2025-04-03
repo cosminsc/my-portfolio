@@ -1,5 +1,11 @@
 <script setup lang="ts">
-import { IconClipboardTextFilled, IconMailFilled, IconMessageFilled, IconUserFilled, IconWallet } from '@tabler/icons-vue'
+import {
+   IconClipboardTextFilled,
+   IconMailFilled,
+   IconMessageFilled,
+   IconUserFilled,
+   IconWallet,
+} from '@tabler/icons-vue'
 import { ref } from 'vue'
 
 const resultMessage = ref(null)
@@ -94,9 +100,9 @@ const submitForm = async () => {
                   >
                      <option class="bg-zinc-700 text-zinc-400" value="Wordpress Plugin">Wordpress Plugin</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Setup Wordpress Theme">
-                        Setup Wordpress Theme
+                        Wordpress Setup Theme
                      </option>
-                     <option class="bg-zinc-700 text-zinc-400" value="Laravel Application">Laravel Application</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="Custom Application">Custom Application</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Logo Design">Logo Design</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Other">Other</option>
                   </select>
@@ -115,10 +121,11 @@ const submitForm = async () => {
                      v-model="formData.budget"
                      class="block min-w-0 w-full grow h-9 px-3 focus:outline-1 focus:outline-sky-700 bg-zinc-700/50 border-none appearance-none"
                   >
-                     <option class="bg-zinc-700 text-zinc-400" value="0-500">0 - 500 EUR</option>
-                     <option class="bg-zinc-700 text-zinc-400" value="500-1000">500 - 1000 EUR</option>
-                     <option class="bg-zinc-700 text-zinc-400" value="1000-1500">1000 - 1500 EUR</option>
-                     <option class="bg-zinc-700 text-zinc-400" value="2000-3000">2000 - 3000 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="500">500 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="1000">1000 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="1500">1500 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="2000">2000 EUR</option>
+                     <option class="bg-zinc-700 text-zinc-400" value="3000">3000 EUR</option>
                      <option class="bg-zinc-700 text-zinc-400" value="5000">Over 5000 EUR</option>
                   </select>
                </div>

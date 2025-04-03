@@ -13,21 +13,21 @@ const list = [
    },
    {
       icon: IconTemplate,
-      name: 'Setup Business Websites',
-      pricingType: 'setupWpTheme',
+      name: 'Business Website Setup',
+      popupType: 'businessWebsiteSetup',
       description:
          'I set up and customize WordPress themes to create a visually appealing and fully functional website, ensuring optimal performance.',
    },
    {
       icon: IconApps,
-      name: 'Custom applications',
+      name: 'Custom Applications',
       description:
          'I build scalable and high-performance web applications using Laravel, leveraging its powerful features to create secure and efficient solutions.',
    },
    {
       icon: IconPencilBolt,
-      name: 'Logo designs',
-      pricingType: 'logo',
+      name: 'Logo Designs',
+      popupType: 'logoDesign',
       description:
          'I craft visually compelling and memorable logo designs that align with brand identity, ensuring a strong and professional presence.',
    },
@@ -49,15 +49,15 @@ const list = [
          <div class="pt-4 xl:pt-0">
             <h3 class="text-lg mb-3">{{ service.name }}</h3>
             <p class="text-zinc-500 mb-2">{{ service.description }}</p>
-            <button
-               v-if="service.pricingType"
-               @click="popupStore.showPopup(service.pricingType)"
+            <RouterLink
+               v-if="service.popupType"
+               :to="{ query: { popup: service.popupType } }"
                type="button"
                class="font-bold text-yellow-600 hover:text-yellow-700 hover:underline transition duration-300 cursor-pointer h-10 flex items-center gap-1 w-fit m-auto xl:m-0 xl:justify-start"
             >
                <IconChevronsRight size="20" />
                <span>View Pricing</span>
-            </button>
+            </RouterLink>
             <RouterLink
                v-else
                to="/contact"
