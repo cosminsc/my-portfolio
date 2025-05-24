@@ -99,9 +99,7 @@ const submitForm = async () => {
                      class="block min-w-0 w-full grow h-9 px-3 focus:outline-1 focus:outline-sky-700 bg-zinc-700/50 border-none appearance-none"
                   >
                      <option class="bg-zinc-700 text-zinc-400" value="Wordpress Plugin">Wordpress Plugin</option>
-                     <option class="bg-zinc-700 text-zinc-400" value="Setup Wordpress Theme">
-                        Wordpress Setup Theme
-                     </option>
+                     <option class="bg-zinc-700 text-zinc-400" value="Wordpress Website">Wordpress Website</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Custom Application">Custom Application</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Logo Design">Logo Design</option>
                      <option class="bg-zinc-700 text-zinc-400" value="Other">Other</option>

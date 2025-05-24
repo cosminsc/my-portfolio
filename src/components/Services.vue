@@ -7,14 +7,14 @@ const popupStore = usePopupStore()
 const list = [
    {
       icon: IconPlug,
-      name: 'Wordpress Integrations',
+      name: 'Wordpress Plugins',
       description:
          'I develop tailor-made WordPress plugins to extend functionality, improve performance, and meet specific business needs with clean and efficient code.',
    },
    {
       icon: IconTemplate,
-      name: 'Business Website Setup',
-      popupType: 'businessWebsiteSetup',
+      name: 'Wordpress Websites',
+      popupType: 'wordpressWebsite',
       description:
          'I set up and customize WordPress themes to create a visually appealing and fully functional website, ensuring optimal performance.',
    },

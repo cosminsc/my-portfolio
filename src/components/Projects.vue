@@ -6,37 +6,37 @@ import { onMounted, ref } from 'vue'
 
 const list = ref([
    {
-      description: 'Website design',
+      description: 'Graphic website design',
       fullSize: '/images/portfolio/greenbusiness.jpg',
       thumbailSize: '/images/portfolio/greenbusiness-small.jpg',
    },
    {
-      description: 'Website design',
+      description: 'Graphic website and logo designs',
       fullSize: '/images/portfolio/realestate.jpg',
       thumbailSize: '/images/portfolio/realestate-small.jpg',
    },
    {
-      description: 'Website design',
+      description: 'Graphic website design',
       fullSize: '/images/portfolio/wikigames.jpg',
       thumbailSize: '/images/portfolio/wikigames-small.jpg',
    },
    {
-      description: 'Website design, logo design, e-Book design, Wordpress development',
+      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/alifelessanxious.jpg',
       thumbailSize: '/images/portfolio/alifelessanxious-small.jpg',
    },
    {
-      description: 'Logo design, Wordpress development',
+      description: 'Graphic logo design, Wordpress development',
       fullSize: '/images/portfolio/lotsofhead.jpg',
       thumbailSize: '/images/portfolio/lotsofhead-small.jpg',
    },
    {
-      description: 'Logo design, website design, e-Book design, Wordpress development',
+      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/homebrewvideos.jpg',
       thumbailSize: '/images/portfolio/homebrewvideos-small.jpg',
    },
    {
-      description: 'Logo design, website design, e-Book design, Wordpress development',
+      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/weightloss.jpg',
       thumbailSize: '/images/portfolio/weightloss-small.jpg',
    },

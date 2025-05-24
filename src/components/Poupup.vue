@@ -80,9 +80,7 @@ watch(isPopupEnabled, (newVal) => {
                      </li>
                      <li class="bg-zinc-700 p-4 space-y-2">
                         <div class="text-lg font-bold">Premium</div>
-                        <div class="text-sm text-zinc-400">
-                           More options and branding assets for a professional look.
-                        </div>
+                        <div class="text-sm text-zinc-400">A complete branding package for a strong identity.</div>
                         <div class="text-3xl font-bold font-montserrat">€999</div>
                         <RouterLink
                            to="/contact"
@@ -110,8 +108,8 @@ watch(isPopupEnabled, (newVal) => {
                      </li>
                   </ul>
                </div>
-               <div v-if="'businessWebsiteSetup' === popupType">
-                  <div class="text-center text-2xl mb-5">Business Website Setup</div>
+               <div v-if="'wordpressWebsite' === popupType">
+                  <div class="text-center text-2xl mb-5">Wordpress Website</div>
                   <ul class="grid gap-4 grid-cols-1 md:grid-cols-3">
                      <li class="bg-zinc-700 p-4 space-y-2">
                         <div class="text-lg font-bold">Basic</div>
