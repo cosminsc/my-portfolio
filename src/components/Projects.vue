@@ -6,22 +6,22 @@ import { onMounted, ref } from 'vue'
 
 const list = ref([
    {
-      description: 'Graphic website design',
+      description: 'Website Graphic design',
       fullSize: '/images/portfolio/greenbusiness.jpg',
       thumbailSize: '/images/portfolio/greenbusiness-small.jpg',
    },
    {
-      description: 'Graphic website and logo designs',
+      description: 'Website Graphics & Logo Design',
       fullSize: '/images/portfolio/realestate.jpg',
       thumbailSize: '/images/portfolio/realestate-small.jpg',
    },
    {
-      description: 'Graphic website design',
+      description: 'Website Graphic design',
       fullSize: '/images/portfolio/wikigames.jpg',
       thumbailSize: '/images/portfolio/wikigames-small.jpg',
    },
    {
-      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
+      description: 'Website Graphics & Logo Design, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/alifelessanxious.jpg',
       thumbailSize: '/images/portfolio/alifelessanxious-small.jpg',
    },
@@ -31,12 +31,12 @@ const list = ref([
       thumbailSize: '/images/portfolio/lotsofhead-small.jpg',
    },
    {
-      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
+      description: 'Website Graphics & Logo Design, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/homebrewvideos.jpg',
       thumbailSize: '/images/portfolio/homebrewvideos-small.jpg',
    },
    {
-      description: 'Graphic website and logo designs, e-Book design, Wordpress development',
+      description: 'Website Graphics & Logo Design, e-Book design, Wordpress development',
       fullSize: '/images/portfolio/weightloss.jpg',
       thumbailSize: '/images/portfolio/weightloss-small.jpg',
    },
